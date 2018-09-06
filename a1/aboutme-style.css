@@ -1,0 +1,102 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #3925d0;
+	background-image:url(bggreece.png);
+	font-family: sans-serif;
+}
+div.classone{
+	background: linear-gradient(to bottom, rgba(53, 109, 121, .40), rgba(53, 109, 121, 1));
+	padding: 10px;
+	margin-left: 20%;
+	margin-right: 20%;
+	float: left;
+}
+
+
+h1{
+	color: #00c7d1;
+	font-size: 35px;
+	text-align: center;
+}
+h2{
+	color: #00c7d1;
+	font-size: 22px;
+}
+.thingsilike{
+	color: #ffffff;
+}
+h3{
+	color: #00c7d1;
+	font-size: 22px;
+}
+h4{
+	color: #00c7d1;
+	font-size: 22px;
+}
+#actualquote{
+	font-style: italic;
+	color: #ffffff;
+}
+#quotename{
+	color:#ffffff;
+}
+.classlist{
+	color: #ffffff;
+}
+.silvie{
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+	height: 20%;
+	width: 20%;
+}
+.silvie2{
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;	
+	height: 20%;
+	width: 20%;
+}
+#dogpics{
+    text-align:center;
+}
+.headshot{
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	height: 20%;
+	width: 20%;
+}
+.classes{
+	margin-left:20%;
+}
+.hobbies{
+	margin-left:20%;
+}
+.links{
+	color: #00c7d1;
+	margin-left:20%;
+}
+.bio{
+	color: #00c7d1;
+	margin-left:20%;
+}
+table {
+    border-collapse: collapse;
+    width: 80%;
+	margin-left:10%;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+	color:#00c7d1;
+}
+tr:nth-child(odd) {
+    background-color: #5f82b9;
+}
+tr:nth-child(even) {
+    background-color: #354f79;
+}
+	
