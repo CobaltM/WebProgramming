@@ -1,0 +1,33 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #3925d0;
+	font-family: sans-serif;
+}
+
+h1{
+	color: #ffffff;
+	font-size: 35px;
+}
+h2{
+	color: #4f8fe8;
+	font-size: 22px;
+}
+.thingsilike{
+	color: #ffffff;
+}
+h3{
+	color: #4f8fe8;
+	font-size: 22px;
+}
+.classes{
+	color: #ffffff;
+}
+.silvie{
+	height: 20%;
+	width: 20%;
+}
+.silvie2{
+	height: 20%;
+	width: 20%;
+}
