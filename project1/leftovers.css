@@ -1,0 +1,10 @@
+.img1 {
+}
+.img2 {
+	animation-delay: -4s;
+	transform: translate(0,-250px);
+}
+.img3 {
+    animation-delay: -2s;
+    transform: translate(0,-500px);
+}

@@ -1,0 +1,227 @@
+body {
+	color: #fff;
+	background: url("earth5.jpg");
+	background-size: 200% 200%;
+	animation: gradientanimation 360s ease infinite;
+}
+
+@keyframes gradientanimation { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.top-menu {
+  overflow: hidden;
+  background-color: #333;
+  font-family: 'Open Sans', sans-serif;
+}
+.top-menu a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.register {
+  float: left;
+  overflow: hidden;
+}
+.register .regbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+.navbar a:hover, .register:hover .regbtn {
+  background-color: seagreen;
+}
+.register-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+.register-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.register-content a:hover {
+  background-color: #ddd;
+}
+.register:hover .register-content {
+  display: block;
+}
+
+#res {
+    max-width:90%;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    margin-bottom: 50px;
+}
+#res li {
+    display: inline-block;
+    width:33%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+.res-cell {
+    display:block;
+    position: relative;
+    overflow:hidden;
+    height: 250px;
+    object-fit: cover;
+
+}
+#res li:hover .res-cell {
+    overflow: initial;
+}
+        
+/* If have the image layer */
+.res-img {
+    display:block;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+#res li:hover .res-img {
+    transform:scale(1.10);
+    z-index: 2;
+    position: absolute;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+
+/* If have captions */
+.res-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-transform:capitalize;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Open-Sans', sans-serif;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    transform:translate(-20px,105px);
+    transition:all .3s;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#res li:hover .res-text {
+	transition-delay: .3s;
+    transform:translate(-30px,125px);
+    opacity:0.9;
+    z-index: 3;
+}
+
+.price-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    right:0;
+    width:100%;
+    text-align: right;
+    text-transform:capitalize;
+    font-size:15px;
+    font-weight:bold;
+    font-family: 'Open-Sans', sans-serif;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    transform:translate(90px,-100px);
+    transition:all .3s;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#res li:hover .price-text {
+	transition-delay: .3s;
+    transform:translate(100px,-110px);
+    opacity:0.9;
+    z-index: 3;
+}
+
+.date-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    right:0;
+    width:100%;
+    text-align: right;
+    text-transform:capitalize;
+    font-size:15px;
+    font-weight:bold;
+    font-family: 'Open-Sans', sans-serif;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    transform:translate(90px,-70px);
+    transition:all .3s;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#res li:hover .date-text {
+	transition-delay: .3s;
+    transform:translate(100px,-80px);
+    opacity:0.9;
+    z-index: 3;
+}
+
+@media (max-width: 9000px) {
+    #res li {
+        width:33.33%;
+    }
+}
+.resorts{
+	color: #fff;
+	background: linear-gradient(270deg, rgba(29, 40, 122, 0.8), rgba(23, 84, 104, 0.6), rgba(11, 124, 119, .4));
+	background-size: 400% 400%;
+	animation: gradientanimation 40s ease infinite;
+	margin-left: 5%;
+	margin-right: 5%;
+	float: left;
+	animation: gradientanimation 15s ease infinite;
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+.img1 {
+}
+.img2 {
+	animation-delay: -4s;
+}
+.img3 {
+    animation-delay: -2s;
+}
