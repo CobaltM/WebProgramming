@@ -1,0 +1,41 @@
+body {
+	background-color: #FFCC00;
+	color:#000000;
+  font-family: "open sans",sans-serif;
+}
+.titlepart {
+  background-color: #F0F0F0;
+  text-align: right;
+  color:#9CA018;
+}
+.toplist {
+  display: inline-block;
+  width:200px;
+  vertical-align:middle;
+  box-sizing:border-box;
+  margin:0;
+  padding: 10px;
+  margin-right: 10px;
+  background-color: #E2E598;
+}
+.blockcell{
+  position: absolute;
+  transform: translate(155px,-35px);
+  width: 30px;
+  height: 40px;
+  margin: 5px;
+  background-color: #232077;
+}
+.salad{
+  margin: 0;
+  padding: 18px 0 18px 42px;
+  list-style: none;
+  background-image: url("saladsprite.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 40px;
+}
+.saladpic{
+  float: right;
+  transform: translateY(-1000px);
+}

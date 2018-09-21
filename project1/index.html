@@ -7,12 +7,12 @@
 	</head>
 	<body>
 		<div id="top-menu" class = "top-menu">
-			<a href="#" id="home">Home</a>
+			<a href="http://codd.cs.gsu.edu/~scaldwell9" id="home">Home</a>
 			<div class="register">
 				<button class="regbtn">About</button>
 				<div class="register-content">
 					<a href="#" id="contact">Contact</a>
-					<a href="#" id="mission">Our Mission</a>
+					<a href="https://youtu.be/QZkuJLy0RvY" id="mission">About (YT link)</a>
 				</div>
 			</div>
 			<div class="register">
@@ -147,5 +147,23 @@
 			    </li>
 			</ul>
 		</div>
+		<script>
+			window.onscroll = function() {myFunction()};
+
+			// Get the navbar
+			var navbar = document.getElementById("top-menu");
+
+			// Get the offset position of the navbar
+			var sticky = navbar.offsetTop;
+
+			// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+			function myFunction() {
+			  if (window.pageYOffset >= sticky) {
+			    navbar.classList.add("sticky")
+			  } else {
+			    navbar.classList.remove("sticky");
+			  }
+			}
+		</script>
 	</body>
 </html>
