@@ -1,0 +1,59 @@
+<?php
+function question1() {
+      echo "<p><i>“Good morning, Dave,” said HAL</i></p>";
+}
+
+function question2($radius){
+   $a= pi() * $radius * $radius;
+   echo($a);
+   echo "<br>";
+      
+}
+function question3($celFahr){
+   echo (5/9)*( $celFahr - 32);
+   echo "<br>";
+}
+function question4(){
+   $stringVar = "  PHP is fun   ";
+   echo "String has ",strlen(trim($stringVar))," characters";
+   echo "<br>";
+}
+function question5(){
+   $stringVar = "WDWWLWWWLDDWDLL";
+   echo substr($stringVar,strpos($stringVar,"WWW")+3,1);
+   echo "<br>";
+}
+function question6($stringForward){
+  $stringForward=strtolower($stringForward);
+  $stringBackward=strrev($stringForward);
+  if($stringForward == $stringBackward){
+      echo "True";
+      echo "<br>";
+  }
+  else{
+      echo "False";
+      echo "<br>";
+    }
+}
+function question7(){
+  $num = 7;
+  if($num%2==0){
+      echo "Number is even";
+      echo "<br>";
+    }
+  else{
+      echo "Number ",$num," is odd";
+      echo "<br>";
+    }
+}
+function question8(){
+  
+}
+question1();
+question2(10);
+question3(72);
+question4();
+question5();
+question6(Kayak);
+question7();
+?>
