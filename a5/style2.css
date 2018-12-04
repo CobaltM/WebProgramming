@@ -1,0 +1,7 @@
+body {
+    color: #FFF;
+    background: linear-gradient(-45deg, #639EDB, #0668CF);
+    background-size: 100% 300%;
+    font-family: 'Arimo', sans-serif;
+    justify-content: center;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title> Inclass 5 1 </title>
+	<meta charset="UTF-8">
+	</head>
+	<body>
+		<script>
+			//1
+			var fib = [];
+			fib.push(0);
+			fib.push(1);
+			var i = 2;
+			for(i=2;i<10;i++){
+				fib.push(fib[i-2]+fib[i-1]);
+			}
+			document.write(fib+"<br>");
+			//2
+			var two;
+			for(two = 0;two<6;two++){
+				var le = two;
+				while(le != 0){
+					document.write('*');
+					le--;
+				}
+				document.write('<br>');
+			}
+			//3
+			function sortit(arr){
+				return arr.sort();
+			}
+			document.write(sortit([0,1,2,4,3,6,5,8,7])+"<br>");
+			//4
+			function countit(arr){
+				var i;
+				var j;
+				var ids = [];
+				var idindex;
+				var counts = [];
+				var incount;
+				for(i=0;i<arr.length;i++){
+					incount=false;
+					if(i==0){
+						ids.push(arr[i]);
+						counts.push(1);
+					}
+					for(j=0;j<counts.length;j++){
+						if(arr[i]==ids[j]){
+							incount = true;
+							idindex = j;
+							break;
+						}
+					}
+					if(!incount){
+						ids.push(arr[i]);
+						counts.push(1);
+					}
+					else{
+						counts[idindex]++;
+					}
+				}
+				var maxc=0;
+				var max;
+				for(i=0;i<counts.length;i++){
+					if(counts[i]>maxc){
+						maxc=counts[i];
+						max=ids[i];
+					}
+				}
+				return(max);
+				
+			}
+			document.write(countit([1,1,1,3,4,6,5,9,9,9,9,9,9,4,9,2,2,2,2,5,1,1,2])+"<br>");
+			//5
+			function sixScramble(arr){
+				var i;
+			    var j;
+			    var k;
+			    for (i = 5; i > 0; i--) {
+			        j = Math.floor(Math.random() * (i + 1));
+			        k = arr[i];
+			        arr[i] = arr[j];
+			        arr[j] = k;
+			    }
+			    return arr;
+			}
+			document.write(sixScramble([1,2,3,4,5,6]));
+		</script>
+	</body>

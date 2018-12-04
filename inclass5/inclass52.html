@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title> Inclass 5 2 </title>
+	<meta charset="UTF-8">
+	</head>
+	<body>
+		<form>
+			<h5 id="iderror" style="color:red"></h5>
+			<h5 id="idname">ID:
+				<input type="text" id="idin"/>
+			</h5>
+			<h5 id="fnerror" style="color:red"></h5>
+			<h5 id="fnname">FirstName:
+				<input type="text" id="fnin"/>
+			</h5>
+			<h5 id="lnerror" style="color:red"></h5>
+			<h5 id="lnname">LastName:
+				<input type="text" id="lnin"/>
+			</h5>
+			
+			
+			<input type="button" onclick="validate()" id="sbmtbtn" value="add">
+			<h5 id = "successoutput"></h5>
+		</form>
+		<script>
+			function validate(){
+				var idin = document.getElementById("idin").value;
+				var isid = true;
+				var fnin = document.getElementById("fnin").value;
+				var isfn = true;
+				var lnin = document.getElementById("lnin").value;
+				var isln = true;
+				if(idin.length == 0){
+					isid=false;
+				}
+				if(fnin.length == 0){
+					isfn=false;
+				}
+				if(lnin.length == 0){
+					isln=false;
+				}
+				if(isid && isfn && isln){
+					document.getElementById("successoutput").innerHTML="ID equals "+idin+"<br>First Name equals " + fnin +"<br> Last Name equals " + lnin;
+					return true;
+				}
+				else{
+					var alertlog = "";
+					if(!isid){
+						alertlog+="Please Enter ID\n";
+						document.getElementById("iderror").innerHTML="Please Enter an ID!";
+					}
+					if(!fnin){
+						alertlog+="Please Enter a First Name\n";
+						document.getElementById("fnerror").innerHTML="Please Enter a First Name!";
+					}
+					if(!lnin){
+						alertlog+="Please Enter a Last Name\n";
+						document.getElementById("lnerror").innerHTML="Please Enter a Last Name!";
+					}
+					alert(alertlog);
+
+				}
+				
+			}
+		</script>
+
+		</form>
+	</body>

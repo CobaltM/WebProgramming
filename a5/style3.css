@@ -1,0 +1,52 @@
+body {
+    color: #000;
+    background-color: #000;
+}
+
+
+#victory{
+    color: white;
+    font-size: 20;
+    text-align: center;
+}
+#time{
+    color: white;
+    font-size: 20;
+    text-align: right;
+    margin-right: 20%;
+
+}
+#res {
+    width: 40%;
+    margin-right:30%;/*center aligned*/
+    margin-left: 30%;
+    padding:0;
+    font-size:0;
+    list-style:none;
+    margin-bottom: 50px;
+}
+#res li {
+    width:25%;
+    display: inline-block;  
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+.res-cell {
+    display:block;
+    position: relative;
+    overflow:hidden;
+
+}
+        
+/* If have the image layer */
+.res-img {
+    display:block;
+    width:100%;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+

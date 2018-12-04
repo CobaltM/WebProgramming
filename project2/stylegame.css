@@ -1,0 +1,46 @@
+html {
+  scroll-behavior: smooth;
+
+}
+body {
+  background-color: #000;
+  background-image: url("bg.gif");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+table {
+  color: #e2dedb;
+    border-collapse:collapse;
+}
+
+table td {
+   border:none;
+}
+.attacker{
+  width: 65px;
+  height:65px;
+  background-color: transparent;
+  padding: 1px;
+  display:inline-block;
+  opacity: 0.1;
+}
+.attacker:hover{
+  opacity: 1;
+}
+.ship{
+  display:block;
+  transform: translateY(-100%);
+}
+.selector{
+  background:transparent;
+  font-size: 0;
+  border: none !important;
+}
+#scoreboard{
+  
+}
+
+
+
